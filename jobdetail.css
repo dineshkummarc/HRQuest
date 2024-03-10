@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background: #F4F4F5;
+}
+
+
+.container {
+    padding: 0px 20px;
+    margin: 0 auto;
+    min-width: 1024px;
+    max-width: 1240px;
+    
+    
+}
+
+.row {
+    display: flex;
+}
+
+.row-first, .row-second {
+    flex-basis: 50%;
+}
+
+.row-first {
+    margin-right: 50px;
+    padding: 60px; 
+}
+
+.row-second {
+    margin-top: 35px;
+    padding: 30px 40px;
+    width: 100%;
+    border: 1px solid #eaeaec;
+    border-radius: 0.5rem;
+    background-color: #fff;
+    color: #000;
+    overflow-y: auto;
+    flex: 1;
+}
+
+i {
+    padding: 10px;
+    padding-left: 0px;
+}
+
+
+
+.skill {
+    display: flex;
+    list-style-type: none;
+}
+
+.skill li {
+    padding-top: 10px;
+}
+
+
+ul li:nth-child(3),
+ul li:nth-child(4){
+    padding-left: 10px;
+}
+
+ul li:nth-child(2){
+    margin-left: -6px;
+    
+}
+.apply button{
+    background: #4C5FD5;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    padding: 8px;
+    margin-top: 5px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.fa-lock{
+    padding: 0px;
+    margin-right: 5px;
+}
+
+
+nav{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding:25px;
+    background: #DADBF1;
+}
+
+nav .fas{
+    display:none;
+}
+
+nav a{
+    text-decoration: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 10px 25px;
+    list-style: none;
+}
+
+nav ul li a{
+    font-size: 18px;
+    color: #000;
+} 
+
+.logo {
+    position: absolute;
+    left: 10%;
+    top: 4%;
+    color: #000;
+}
+
+.logo span {
+    color: #4C5FD5;
+}
+
+
+ul.key-benefits {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul.key-benefits li {
+    position: relative;
+    margin-left: 20px;
+    padding-left: 5px;
+}
+
+ul.key-benefits li::before {
+    content: '';
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 10px;
+    background-color: #000;
+    border-radius: 50%;
+}

@@ -1,0 +1,438 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container, .container-second{
+    padding: 75px 10%;
+}
+
+.container{
+    background: #fff;
+}
+
+.container-second {
+    background: #DADBF1;
+}
+
+.title {
+    font-size: 50px;
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 40px;
+}
+
+/* Header Section */
+
+.background-section {
+    background-image: url('images/brainstorm.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.company-title {
+    text-align: center;
+    padding-top: 50px;
+    font-size: 10px;
+}
+
+.tagline {
+    padding-top: 5px;
+    font-size: 15px;
+}
+
+nav{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding:25px;
+    background: #DADBF1;
+}
+
+nav .fas{
+    display:none;
+}
+
+nav a{
+    text-decoration: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 10px 8px;
+    list-style: none;
+}
+
+nav ul li a{
+    font-size: 18px;
+    color: #000;
+} 
+
+.logo {
+    margin-right: 120px;
+    color: #000;
+}
+
+.logo span {
+    color: #4C5FD5;
+}
+
+
+/* Our Features */
+
+.features, .careers {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px 0px;
+}
+
+.feature-card, .career-card {
+    max-width: 300px;
+    padding: 40px;
+    margin: 35px 20px;
+    border-radius: 10px;
+    background: #DADBF1;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.feature-icon img, .career-icon img {
+    max-width: 25%;
+}
+
+.feature-text, .feature-heading, .career-text, .career-heading {
+    padding: 10px 0;
+    text-align: left;
+}
+
+/* about-us and message-from-ceo sections */
+.row-first{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.about {
+    padding: 80px 0px;
+}
+
+.message{
+    padding: 40px 0px;
+}
+
+.about-row-left, .message-row-right {
+    flex-basis: 60%;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.about-row-right, .message-row-left{
+    flex-basis: 35%;
+}
+
+.about-row-right img, .message-row-left img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.position{
+    text-align: right;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+
+/* testimonials */
+
+.testimonial-slider {
+    width: 100%;
+  }
+  
+  .testimonial-card {
+    max-width: 350px;
+    margin: 30px;
+    padding: 30px;
+    background: #DADBF1; 
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .testimonial-icon img{
+    max-width: 15%;
+  }
+  
+  .testimonial-image, .testimonial-name {
+    text-align: center;
+  }
+  
+  .testimonial-image img {
+    border-radius: 50%;
+    max-width: 30%;
+    margin: 15px auto;
+  }
+
+
+/* contact section */
+
+.contact-left h1 {
+    font-size:45px;
+}
+
+.sub-title {
+    font-size: 30px;
+    margin-top: 40px;
+}
+
+.contact-left {
+    flex-basis: 35%;
+    padding-top: 15px;  
+}
+
+.contact-left p i {
+    margin-right: 15px;
+    font-size: 25px;
+    color: #4C5FD5;
+}
+
+.btn {
+    margin: 50px 0;
+    border: 1px solid #4C5FD5;
+    background: #4C5FD5;
+    border-radius: 6px;
+    color: #000;
+}
+
+.contact-right {
+    flex-basis: 60%;
+}
+
+.contact-left p {
+    margin-top: 15px; 
+    font-size: 20px;  
+}
+
+.contact-right form {
+    width: 100%;
+}
+
+form input, form textarea {
+    width: 100%;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    background: #fff;
+    padding: 15px;
+    color: #525252;
+    margin: 15px 0;
+}
+
+form .btn {
+    margin-top: 20px;
+    padding: 14px 60px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+
+
+
+/* Media Query */
+
+/* 1. small screen like smartphones and small tablets */
+@media only screen and (max-width: 767px){
+    
+    /* header section */
+
+    .background-section {
+        background-image: url('images/brainstorm-small.jpg');
+    }
+
+    .company-title {
+        font-size: 7px;
+    }
+    
+    .tagline {
+        padding-top: 5px;
+        font-size: 10px;
+    }
+
+    nav .fas{
+        display: block;
+        font-size: 30px;
+        cursor: pointer;
+        color: #4C5FD5;
+    }
+
+    nav ul{
+        background: #DADBF1;
+        position: absolute;
+        top:0;
+        left: 100%;
+        width: 100%;
+        height: 100vh;
+        padding-top: 80px;
+    }
+    
+    nav ul li{
+        display: block;
+        margin: 25px;
+        text-align: center;
+    }
+
+    nav ul .fas {
+        position: absolute;
+        top: 25px;
+        right: 25px;
+    }
+
+    .logo {
+        position: absolute;
+        top: 5%;
+        right: 48%;
+    }
+
+    .career-logo {
+        right: 40%;
+    }
+
+    /* about us section */
+
+    .row-first {
+        flex-direction: row;
+    }
+    
+    /* our features */
+
+    .features, .careers {
+        justify-content: center;
+    }
+
+
+    /* message from ceo section */
+    .title {
+        font-size: 35px;
+        text-align: center !important;
+    }
+
+    .message-row-left, .message-row-right, .about-row-left, .about-row-right{
+        padding: 15px 0;
+        flex-basis: 100%;
+    }
+
+    /* contact section */
+    
+    .contact-left, .contact-right {
+        flex-basis: 100%;
+    }
+    .contact-left p{
+        margin: 15px 0;
+    }
+}
+
+/* 2. medium screens like large tablets */
+
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+
+
+    /* header section */
+
+    .background-section {
+        background-image: url('images/brainstorm-medium.jpg');
+    }
+
+
+    /* our features */
+    .feature-card {
+        flex-basis: 42%;
+    }
+
+
+    /* message from ceo section - code from here. */
+    .message-row-left, .message-row-right, .about-row-left, .about-row-right {
+        flex-basis: 100%;
+        padding: 15px 0;
+    }
+
+    .title {
+        text-align: center !important; 
+    }
+
+    .contact-left h1{
+        font-size: 35px;
+    }
+    
+    .sub-title {
+        font-size: 25px;
+    }
+    
+    .contact-left p {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width:1195px){
+    nav .fas{
+        display: block;
+        font-size: 30px;
+        cursor: pointer;
+        color: #4C5FD5;
+    }
+
+    nav ul{
+        background: #DADBF1;
+        position: fixed;
+        top:0;
+        left: 100%;
+        width: 100%;
+        height: 100vh;
+        padding-top: 80px;
+    }
+    
+    nav ul li{
+        display: block;
+        margin: 25px;
+        text-align: center;
+    }
+
+    nav ul .fas {
+        position: absolute;
+        top: 25px;
+        right: 25px;
+    }
+
+    .logo {
+        position: absolute;
+        top: 5%;
+        right: 67%;
+    }
+}
+
+
+/* 3. large screens like laptops and desktops - @media only screen and (min-width: 1024px) */
+
+@media only screen and (min-width: 1150px) {
+    .feature-card {
+        flex-basis: 28%;
+    }
+
+    .career-logo {
+        position: absolute;
+        bottom:92%;
+        right: 72%;
+    }
+}
+
+
+
+

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HR Quest</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+  <!-- Header Section -->
+<div id="header">
+  <nav>
+      <a href="#header"><h1 class="logo">HR <span>Quest</span></h1></a>
+      <ul id="nav-bar">
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#features">Our Features</a></li>
+        <li><a href="index.html#message">Message from CEO</a></li>
+        <li><a href="index.html#testimonials">Testimonials</a></li>
+        <li><a href="careers.php">Careers</a></li>
+        <li><a href="login.php">Login</a></li>
+        <li><a href="register.php">Sign Up</a></li>
+        <li><a href="index.html#contact-us">Contact</a></li>
+        <i class="fas fa-times" onclick="closemenu()"></i>
+      </ul>
+      <i class="fas fa-bars" onclick="openmenu()"></i>
+    </nav>
+    <div class="background-section">
+      <div class="company-title">
+        <h1>Streamline your HR, Empower Your People</h1>
+        <p class="tagline">Build a happy and engaged workforce.</p>
+      </div>
+    </div>
+</div>
+
+
+  <!-- About Us -->
+<div id="about">
+  <div class="container-second">
+    <div class="about">
+      <h1 class="title" style="text-align: left;">About Us</h1>
+      <div class="row row-first">
+        <div class="about-row-right">
+          <img src="images/about-us.png" draggable="false" alt="adminimage">
+      </div>
+          <div class="about-row-left">         
+              <p class="about-me" style="text-align: justify;">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Perspiciatis nesciunt facere eaque necessitatibus dignissimos voluptates, deserunt consectetur aliquam, accusantium officia ipsa excepturi. 
+                Voluptas ipsa facere, aliquam quasi temporibus, dolorem quos quidem reiciendis ratione nostrum ipsam ipsum quam voluptates magni officia ea, esse ab omnis incidunt cumque sint. 
+                Incidunt aut tempora sunt laboriosam eum, ad alias consequatur corporis, molestiae similique perspiciatis iste? Rerum enim soluta aperiam rem sapiente sunt optio iste nulla, et ad quia aspernatur architecto voluptate temporibus culpa libero provident fugiat, vitae cupiditate nesciunt. 
+                Itaque praesentium et quia, illum quibusdam architecto modi, ipsum ex dolorem, sit placeat eius harum!
+                </p>
+              </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Our Features -->
+<div id="features">
+  <div class="container">
+    <h1 class="title">Our Features</h1>
+    <div class="features">
+      <div class="feature-card">
+        <div class="feature-icon">
+          <img src="images/office-hours.png" />
+        </div>
+        <div class="feature-heading">
+          <h4>HR Quest for Work</h4>
+        </div>
+        <div class="feature-text">
+          <p>With HR Quest, you can track each 
+            employee's work day and productivity, log 
+            working hours and keep track of remaining 
+            time off and grant leaves for employee.</p>
+        </div>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">
+          <img src="images/talent-recognition.png" />
+        </div>
+        <div class="feature-heading">
+          <h4>HR Quest for Talent Management</h4>
+        </div>
+        <div class="feature-text">
+          <p>You can also find and recruit top talent, 
+            organize employee onboarding and 
+            offboarding, keep track of employee information.</p>
+        </div>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">
+          <img src="images/pay.png" />
+        </div>
+        <div class="feature-heading">
+          <h4>HR Quest for Payroll</h4>
+        </div>
+        <div class="feature-text">
+          <p>Last but not least, you can generate payroll of particular employee based on their attendance.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <!-- Message from CEO -->
+<div id="message">
+  <div class="container-second">
+    <div class="message">
+      <h1 class="title" style="text-align: right;">Message from CEO</h1>
+        <div class="row">
+            <div class="message-row-left">
+                <img src="images/ceo.jpg" draggable="false" alt="adminimage">
+            </div>
+            <div class="message-row-right">         
+                <p class="about-me" style="text-align: justify; line-height: 22px;">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                  Perspiciatis nesciunt facere eaque necessitatibus dignissimos voluptates, deserunt consectetur aliquam, accusantium officia ipsa excepturi. 
+                  Voluptas ipsa facere, aliquam quasi temporibus, dolorem quos quidem reiciendis ratione nostrum ipsam ipsum quam voluptates magni officia ea, esse ab omnis incidunt cumque sint. 
+                  Incidunt aut tempora sunt laboriosam eum, ad alias consequatur corporis, molestiae similique perspiciatis iste? Rerum enim soluta aperiam rem sapiente sunt optio iste nulla, et ad quia aspernatur architecto voluptate temporibus culpa libero provident fugiat, vitae cupiditate nesciunt. 
+                  Itaque praesentium et quia, illum quibusdam architecto modi, ipsum ex dolorem, sit placeat eius harum!
+                  </p>
+                  <div class="position">
+                    <p>Alfred Quest</p>
+                    <p>CEO of HR Quest</p>
+                  </div>
+                </div>
+        </div>
+    </div>
+  </div>
+</div>
+  
+
+
+
+<!-- Testimonials Section -->
+
+<div id="testimonials">
+  <div class="container">
+    <h1 class="title">Testimonials</h1>
+    <div class="testimonial-slider">
+          <div class="testimonial-card">
+              <div class="testimonial-icon">
+                  <img src="images/quote.png" />
+              </div>
+              <div class="testimonial-text">
+                  <p>This is a test. Let's see how it goes, how long can i type depends upon the length of my text. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt, fugit?</p>
+              </div>
+              <div class="testimonial-image">
+                  <img src="images/picture.jpg" alt="random-man">
+              </div>
+              <div class="testimonial-name">
+                <p>Uttam</p> 
+              </div>
+          </div>
+          <div class="testimonial-card">
+              <div class="testimonial-icon">
+                  <img src="images/quote.png" />
+              </div>
+              <div class="testimonial-text">
+                  <p>This is a test. Let's see how it goes, how long can i type depends upon the length of my text. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt, fugit?</p>
+              </div>
+              <div class="testimonial-image">
+                  <img src="images/picture.jpg" alt="random-man">
+              </div>
+              <div class="testimonial-name">
+                <p>Uttam</p> 
+              </div>
+          </div>
+          <div class="testimonial-card">
+              <div class="testimonial-icon">
+                  <img src="images/quote.png" />
+              </div>
+              <div class="testimonial-text">
+                  <p>This is a test. Let's see how it goes, how long can i type depends upon the length of my text. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt, fugit?</p>
+              </div>
+              <div class="testimonial-image">
+                  <img src="images/picture.jpg" alt="random-man">
+              </div>
+              <div class="testimonial-name">
+                <p>Uttam</p> 
+              </div>
+          </div>
+          <div class="testimonial-card">
+              <div class="testimonial-icon">
+                  <img src="images/quote.png" />
+              </div>
+              <div class="testimonial-text">
+                  <p>This is a test. Let's see how it goes, how long can i type depends upon the length of my text. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt, fugit?</p>
+              </div>
+              <div class="testimonial-image">
+                  <img src="images/picture.jpg" alt="random-man">
+              </div>
+              <div class="testimonial-name">
+                <p>Uttam</p> 
+              </div>
+          </div>
+          <div class="testimonial-card">
+              <div class="testimonial-icon">
+                  <img src="images/quote.png" />
+              </div>
+              <div class="testimonial-text">
+                  <p>This is a test. Let's see how it goes, how long can i type depends upon the length of my text. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt, fugit?</p>
+              </div>
+              <div class="testimonial-image">
+                  <img src="images/picture.jpg" alt="random-man">
+              </div>
+              <div class="testimonial-name">
+                <p>Uttam</p> 
+              </div>
+          </div>
+          <div class="testimonial-card">
+              <div class="testimonial-icon">
+                  <img src="images/quote.png" />
+              </div>
+              <div class="testimonial-text">
+                  <p>This is a test. Let's see how it goes, how long can i type depends upon the length of my text. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt, fugit?</p>
+              </div>
+              <div class="testimonial-image">
+                  <img src="images/picture.jpg" alt="random-man">
+              </div>
+              <div class="testimonial-name">
+                <p>Uttam</p> 
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
+
+  <!-- Contact Section -->
+  
+<div id="contact-us">
+<div class="container-second">
+  <div class="row">
+      <div class="contact-left">
+          <h1>Contact Us</h1>
+          <p><i class="fa-sharp fa-solid fa-location-dot"></i> Jawalakhel, Lalitpur</p>
+          <p><i class="fa-solid fa-phone"></i> +977 9818 2562 14</p>
+          <h2 class="sub-title">Opening Hours</h2>
+          <p><i class="fa-regular fa-solid fa-clock"></i> 9:00am-6pm, Mon-Fri</p>
+      </div>
+      <div class="contact-right">
+          <form action="https://formcarry.com/s/mUjj0GuI9n2" method="POST"> 
+              <input type="text" name="name" placeholder="Your name" required>
+              <input type="email" name="email" placeholder="Your email" required>
+              <textarea name="message" cols="30" rows="10" placeholder="Your message here"></textarea>
+              <button type="submit" class="btn">Submit</button>
+          </form>
+      </div>
+  </div>
+</div>
+</div>
+    
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+    
+</body>
+</html>
