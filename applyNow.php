@@ -77,7 +77,7 @@ if ($result && mysqli_num_rows($result) > 0) {
             <input type="text" id="lastname" name="lastname" required>
             </div>
              <div class="field-input">
-            <label for="email">Email</label>
+            <label for="email">Email (Must be same as user email)</label>
             <input type="email" id="email" name="email" required>
             </div>
              <div class="field-input">

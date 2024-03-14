@@ -98,17 +98,6 @@ label {
     margin-top: 10px;
 }
 
-/* .goback button{
-    background-color: #4C5FD5;
-    border: none;
-    border-radius: 5px;
-    font-size: 15px;
-    cursor: pointer;
-    position: absolute;
-    top: 10%;
-    left: 10%;
-    padding: 10px; 
-} */
 
 .goback a, .goback i {
     font-size: 15px;

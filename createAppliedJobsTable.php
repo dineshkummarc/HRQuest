@@ -3,6 +3,7 @@
 <?php
 
 $sql = "CREATE TABLE appliedJobs (
+  id INT AUTO_INCREMENT PRIMARY KEY,
   firstname VARCHAR(255) NOT NULL,
   lastname VARCHAR(255) NOT NULL,
   email varchar(255) NOT NULL,
