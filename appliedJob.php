@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Apllied Jobs</title>
+    <title>Applied Jobs</title>
     <link rel="stylesheet" href="appliedJob.css">
     <style>
         .accept-button {
@@ -34,7 +34,7 @@
                     <th>Applicant Name</th>
                     <th>Status</th>
                     <th style="text-align: center;">Action</th>
-                    <th>More</th>
+                    <th>Details</th>
                 </tr>
             </thead>
             <tbody>

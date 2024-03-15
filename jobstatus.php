@@ -18,7 +18,8 @@
         <tr>
             <th>Job Title</th>
             <th>Applicant Name</th>
-            <th>See more</th>
+            <th>Status</th>
+            <th>Details</th>
         </tr>
         </thead>
         <tbody>
@@ -48,6 +49,7 @@
                     echo "<tr>";
                     echo "<td>" . $row["jobtitle"] . "</td>";
                     echo "<td>" . $row["firstname"] . " " . $row["lastname"] . "</td>";
+                    echo "<td>" . 'Pending' . "</td>";
                     echo "<td><a href='userJobDetail.php?id=" . $row['id'] . "'>See More</a></td>";
                     echo "</tr>";
                 }

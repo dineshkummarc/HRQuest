@@ -1,6 +1,8 @@
 <?php
 include 'database.php';
 
+session_start(); // Start session if not already started
+
 $job_id = $_GET['id']; 
 
 $result = mysqli_query($conn, "SELECT job_title FROM jobs WHERE id = $job_id");
@@ -31,13 +33,19 @@ if ($result && mysqli_num_rows($result) > 0) {
         } else {
             if (move_uploaded_file($_FILES["resume"]["tmp_name"], $target_file)) {
                 echo "The file ". htmlspecialchars( basename( $_FILES["resume"]["name"])). " has been uploaded.";
+                
+                // Fetch username from session
+                $username = isset($_SESSION['username']) ? $_SESSION['username'] : '';
+
+                // Retrieve other form data
                 $firstname = $_POST['firstname'];
                 $lastname = $_POST['lastname'];
                 $email = $_POST['email'];
                 $contact = $_POST['contact'];
                 $location = $_POST['location'];
 
-                mysqli_query($conn, "INSERT INTO appliedjobs (firstname, lastname, email, contact, location, resume_path, jobtitle) VALUES ('$firstname', '$lastname', '$email', '$contact', '$location', '$target_file', '$job_title')");
+                // Insert data into appliedjobs table
+                mysqli_query($conn, "INSERT INTO appliedjobs (firstname, lastname, email, contact, location, resume_path, jobtitle, username) VALUES ('$firstname', '$lastname', '$email', '$contact', '$location', '$target_file', '$job_title', '$username')");
                 header("Location: userCareer.php");
                 exit();
             } else {
@@ -52,57 +60,56 @@ if ($result && mysqli_num_rows($result) > 0) {
 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
     <title>Apply Now</title>
     <link rel="stylesheet" href="jobpost.css">
-  </head>
-  <body>
+</head>
+<body>
     
-    <div id="container">
-        <?php
-            include 'database.php';
-            $job_id = $_GET['id'];
-            $result = mysqli_query($conn, "SELECT * FROM jobs WHERE id = $job_id");
-            $row = mysqli_fetch_assoc($result);
-            echo "<h2 style='text-align: center;'>Apply for " . $row['job_title'] . "</h2>";
-          ?>
-        <form action="" method="post" enctype="multipart/form-data" onsubmit="showConfirmation()">
-            <div class="field-input">
+<div id="container">
+    <?php
+    include 'database.php';
+    $job_id = $_GET['id'];
+    $result = mysqli_query($conn, "SELECT * FROM jobs WHERE id = $job_id");
+    $row = mysqli_fetch_assoc($result);
+    echo "<h2 style='text-align: center;'>Apply for " . $row['job_title'] . "</h2>";
+    ?>
+    <form action="" method="post" enctype="multipart/form-data" onsubmit="showConfirmation()">
+        <div class="field-input">
             <label for="firstname">First Name:</label>
             <input type="text" name="firstname" id="firstname" required>
-            </div>
-             <div class="field-input">
+        </div>
+        <div class="field-input">
             <label for="lastname">Last Name</label>
             <input type="text" id="lastname" name="lastname" required>
-            </div>
-             <div class="field-input">
+        </div>
+        <div class="field-input">
             <label for="email">Email (Must be same as user email)</label>
             <input type="email" id="email" name="email" required>
-            </div>
-             <div class="field-input">
+        </div>
+        <div class="field-input">
             <label for="contact">Phone Number</label>
             <input type="text" name="contact" id="contact" maxlength="10" onkeypress="return event.charCode>=48 && event.charCode<=57" autocomplete="off" required>
-            </div>
-            <div class="field-input">
-           <label for="location">Location:</label>
-           <input type="text" name="location" id="location" required>
-           </div>
-            <div class="field-input">
-                <label for="resume">Upload your resume: (Max 10 MB)</label><br>
-                <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required><br><br>
-            </div>
-             <div class="field-input">
-                <button type="submit">Apply</button>
-            </div>
-            
-      </form>
-     
-    </div>
-    <script>
-        function showConfirmation() {
-            alert("Thanks for applying!");
-        }
-    </script>
-  </body>
+        </div>
+        <div class="field-input">
+            <label for="location">Location:</label>
+            <input type="text" name="location" id="location" required>
+        </div>
+        <div class="field-input">
+            <label for="resume">Upload your resume: (Max 10 MB)</label><br>
+            <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required><br><br>
+        </div>
+        <div class="field-input">
+            <button type="submit">Apply</button>
+        </div>            
+    </form>     
+</div>
+
+<script>
+    function showConfirmation() {
+        alert("Thanks for applying!");
+    }
+</script>
+</body>
 </html>

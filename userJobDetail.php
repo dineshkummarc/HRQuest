@@ -1,5 +1,7 @@
 <?php
 include 'database.php';
+session_start(); // Start session if not already started
+
 $job_id = $_GET['id'];
 $result = mysqli_query($conn, "SELECT * FROM jobs WHERE id = $job_id");
 $row = mysqli_fetch_assoc($result);
@@ -11,7 +13,23 @@ $key_benefits = array(
   "Supportive work environment"
 );
 
+// Check if the user is logged in
+$userLoggedIn = isset($_SESSION['username']) || isset($_SESSION['email']);
+
+// Check if the user has already applied for this job
+$isApplied = false;
+if ($userLoggedIn) {
+    $username = isset($_SESSION['username']) ? $_SESSION['username'] : '';
+    $email = isset($_SESSION['email']) ? $_SESSION['email'] : '';
+    
+    // Check if the user's email or username exists in the appliedJobs table for the given job title
+    $query = "SELECT COUNT(*) AS count FROM appliedJobs WHERE (email = '$email' OR username = '$username') AND jobtitle = '{$row['job_title']}'";
+    $result = mysqli_query($conn, $query);
+    $data = mysqli_fetch_assoc($result);
+    $isApplied = $data['count'] > 0;
+}
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -38,7 +56,11 @@ $key_benefits = array(
             echo '<p><i class="fa-solid fa-location-dot"></i>' . $row["location"] . '</p>';
 
             if (isset($row['id'])) {
-              echo "<a class='apply' href='applyNow.php?id=" . $row['id'] . "'><button>Apply Now</button></a>" . "<br>";
+                if ($isApplied) {
+                  echo "<a class='apply' href=''><button style='color: #000;' disabled><i class='fa-solid fa-lock'></i>Applied</button></a><br>";
+                } else {
+                    echo "<a class='apply' href='applyNow.php?id=" . $row['id'] . "'><button>Apply Now</button></a><br>";
+                }
             } else {
                 echo "<p>Error: Job ID not found</p>";
             }
