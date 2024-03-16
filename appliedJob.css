@@ -57,3 +57,29 @@ button a {
 .download {
     margin: 0;
 }
+
+.accept-button {
+    background-color: green;
+    color: #fff;
+}
+.delete-button {
+    background-color: red;
+    color: #fff;
+}
+
+.download-button{
+    background: #4C5FD5;
+    color: #fff;
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+}
+
+.accepted {
+    color: green;
+}
+
+.rejected {
+    color: red;
+}

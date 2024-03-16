@@ -26,7 +26,8 @@ if(!isset($_SESSION['admin_username'])){
             <a href="employee.php">Employees</a>
             <a href="attendancereport.php">Attendance</a>
             <a href="payroll.php">Payroll</a>
-            <a href="leave.php">Leave Report</a>
+            <!-- <a href="leave.php">Leave Report</a> -->
+            <a href="appliedJob.php">Hire</a>
             <a href="sendmail.php">Send Email</a>
             <a href="logout.php">Logout</a>
         </div>

@@ -18,15 +18,29 @@ $userLoggedIn = isset($_SESSION['username']) || isset($_SESSION['email']);
 
 // Check if the user has already applied for this job
 $isApplied = false;
+$isAccepted = false;
+$isRejected = false;
 if ($userLoggedIn) {
     $username = isset($_SESSION['username']) ? $_SESSION['username'] : '';
     $email = isset($_SESSION['email']) ? $_SESSION['email'] : '';
     
     // Check if the user's email or username exists in the appliedJobs table for the given job title
-    $query = "SELECT COUNT(*) AS count FROM appliedJobs WHERE (email = '$email' OR username = '$username') AND jobtitle = '{$row['job_title']}'";
-    $result = mysqli_query($conn, $query);
-    $data = mysqli_fetch_assoc($result);
-    $isApplied = $data['count'] > 0;
+    $queryApplied = "SELECT COUNT(*) AS count FROM appliedJobs WHERE (email = '$email' OR username = '$username') AND jobtitle = '{$row['job_title']}'";
+    $resultApplied = mysqli_query($conn, $queryApplied);
+    $dataApplied = mysqli_fetch_assoc($resultApplied);
+    $isApplied = $dataApplied['count'] > 0;
+
+    // Check if the user has been accepted for this job
+    $queryAccepted = "SELECT COUNT(*) AS count FROM accepted WHERE (email = '$email' OR username = '$username') AND jobtitle = '{$row['job_title']}'";
+    $resultAccepted = mysqli_query($conn, $queryAccepted);
+    $dataAccepted = mysqli_fetch_assoc($resultAccepted);
+    $isAccepted = $dataAccepted['count'] > 0;
+
+    // Check if the user has been rejected for this job
+    $queryRejected = "SELECT COUNT(*) AS count FROM rejected WHERE (email = '$email' OR username = '$username') AND jobtitle = '{$row['job_title']}'";
+    $resultRejected = mysqli_query($conn, $queryRejected);
+    $dataRejected = mysqli_fetch_assoc($resultRejected);
+    $isRejected = $dataRejected['count'] > 0;
 }
 ?>
 
@@ -56,8 +70,12 @@ if ($userLoggedIn) {
             echo '<p><i class="fa-solid fa-location-dot"></i>' . $row["location"] . '</p>';
 
             if (isset($row['id'])) {
-                if ($isApplied) {
-                  echo "<a class='apply' href=''><button style='color: #000;' disabled><i class='fa-solid fa-lock'></i>Applied</button></a><br>";
+                if ($isAccepted) {
+                    echo "<a class='apply' href=''><button style='background: green; color: #fff;' disabled><i class='fa-solid fa-lock'></i>Accepted</button></a><br>";
+                } elseif ($isRejected) {
+                    echo "<a class='apply' href=''><button style='background: red; color: #fff;' disabled><i class='fa-solid fa-lock'></i>Rejected</button></a><br>";
+                } elseif ($isApplied) {
+                    echo "<a class='apply' href=''><button style='color: #fff;' disabled><i class='fa-solid fa-lock'></i>Applied</button></a><br>";
                 } else {
                     echo "<a class='apply' href='applyNow.php?id=" . $row['id'] . "'><button>Apply Now</button></a><br>";
                 }
