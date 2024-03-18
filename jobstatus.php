@@ -4,11 +4,6 @@
     <meta charset="utf-8">
     <title>Job Status</title>
     <link rel="stylesheet" href="appliedJob.css">
-    <style>
-        a {
-            text-decoration: none;
-        }
-    </style>
 </head>
 <body>
 <div id="container">

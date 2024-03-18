@@ -23,8 +23,7 @@ if(!isset($_SESSION['user_username'])){
           <a href="userDashboard.php">Home</a>
           <a href="userCareer.php">Apply Now</a>
           <a href="jobstatus.php">Job Status</a>
-          <a href="review.php">Reviews and Feedback</a>
-          <a href="settings.php">Settings</a>
+          <a href="userSettings.php">Settings</a>
           <a href="logout.php">Logout</a>
       </div>
     </div>

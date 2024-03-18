@@ -22,11 +22,10 @@ if(!isset($_SESSION['employee_username'])){
         Human Resources Management System - Employee
         </div>
         <div id="header">
-            <a href="attendance.php">Attendance</a>
+            <a href="emp_attendance.php">Attendance</a>
             <a href="invoice.php">Invoice</a>
-            <a href="request.php">Leave Request</a>
-            <a href="mail.php">Send Email</a>
-            <a href="settings.php">Settings</a>
+            <a href="employeeEmail.php">Send Email</a>
+            <a href="employeeSettings.php">Settings</a>
             <a href="logout.php">Logout</a>
         </div>
         </div>

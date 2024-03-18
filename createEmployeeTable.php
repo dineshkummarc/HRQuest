@@ -2,7 +2,7 @@
 
 <?php
 
-$sql = "CREATE TABLE employee (e_username varchar(200), e_email varchar(200), e_password varchar(200))";
+$sql = "CREATE TABLE employee (e_username varchar(200), e_email varchar(200), e_password varchar(200), e_jobtitle varchar(200))";
 if($conn->query($sql)===TRUE){
   echo "Table created successfully.";  
 } else {

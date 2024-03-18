@@ -83,3 +83,18 @@ a{
 .rejected {
     color: red;
 }
+
+.goback a, .goback i {
+    font-size: 15px;
+    cursor: pointer;
+    position: absolute;
+    top: 8%;
+    left: 15%;
+    padding: 10px;
+}
+
+.goback a{
+    padding-left: 50px;
+    padding-top: 10px;
+    text-decoration: none;
+}

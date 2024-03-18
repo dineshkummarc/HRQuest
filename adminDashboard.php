@@ -23,8 +23,8 @@ if(!isset($_SESSION['admin_username'])){
         <div id="header">
             <!-- <a href="adminDashboard.php">Home</a> -->
             <a href="jobpost.php">Post Job</a>
-            <a href="employee.php">Employees</a>
-            <a href="attendancereport.php">Attendance</a>
+            <a href="employees.php">Employees</a>
+            <a href="admin_attendance.php">Attendance</a>
             <a href="payroll.php">Payroll</a>
             <!-- <a href="leave.php">Leave Report</a> -->
             <a href="appliedJob.php">Hire</a>

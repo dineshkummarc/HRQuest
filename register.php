@@ -9,7 +9,6 @@
 </head>
 <body>
 <div class="goback">
-    <!-- <a href="index.html"><button>Go Back</button></a> -->
     <a href="index.html"><i class="fa-solid fa-backward"></i>Go Back</a>
 </div>
 <div class="container">

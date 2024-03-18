@@ -96,6 +96,7 @@ label {
     cursor: pointer;
     transition: all .3s;
     margin-top: 10px;
+    padding: 10px;
 }
 
 
@@ -141,4 +142,47 @@ label {
     transition: all .3s;
     margin-top: 10px;
     padding: 10px 20px;
+}
+
+select, option{
+    padding: 10px 0;
+    font-size: 15px;
+}
+
+
+.container-attendance {
+    flex-direction: column;
+    position:absolute;
+    top: 40%;
+    left: 45%;
+}
+.btn-attendance {
+    height: 35px;
+    background: #4C5FD5;
+    border: none;
+    border-radius: 5px;
+    color: #000;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all .3s;
+    margin-top: 20px;
+    margin-left: 10px;
+    padding: 10px;
+}
+.btn-attendance:hover {
+    opacity: 0.82;
+}
+
+.change {
+    margin: 20px 0;
+}
+
+.error, .success {
+    padding-left: 15px;
+}
+.error {
+    color: red;
+}
+.success{
+    color: green;
 }
