@@ -25,14 +25,13 @@ if(!isset($_SESSION['user_username'])){
     <table>
         <thead>
         <tr>
-            <th>Username</th>
-            <th>Email</th>
-            <th>Change your password</th>
+            <th>Title</th>
+            <th>Detail</th>
         </tr>
         </thead>
         <tbody>
         <?php
-require 'database.php';
+        require 'database.php';
 
 
 // Check if user is logged in
@@ -48,13 +47,20 @@ if(isset($_SESSION['email']) || isset($_SESSION['username'])) {
         // Output data of each row
         while($row = $result->fetch_assoc()) {
             echo "<tr>";
+            echo "<td>Username</td>";
             echo "<td>" . $row["Username"] . "</td>";
+            echo "</tr>";
+            echo "<tr>";
+            echo "<td>Email</td>";
             echo "<td>" . $row["Email"]  . "</td>";
+            echo "</tr>";
+            echo "<tr>";
+            echo "<td>Change your password</td>";
             echo "<td><a href='changepassword.php'><button class='btn'>Change Password</button></a></td>";
             echo "</tr>";
         }
     } else {
-        echo "<tr><td colspan='6'>No user found.</td></tr>";
+        echo "<tr><td colspan='2'>No user found.</td></tr>";
     }
 } 
 else {

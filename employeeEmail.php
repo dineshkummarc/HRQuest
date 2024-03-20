@@ -13,9 +13,13 @@ if(!isset($_SESSION['employee_username'])){
     <meta charset="utf-8">
     <title>Send Email</title>
     <link rel="stylesheet" href="appliedJob.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
 <div id="container">
+<div class="goback">
+        <a href="employeeDashboard.php"><i class="fa-solid fa-backward"></i>Go Back</a>
+    </div>
     <h2>Send Email to Manager</h2>
     <table>
         <thead>
@@ -42,8 +46,14 @@ if(!isset($_SESSION['employee_username'])){
                 echo "<td><a href='mailto:" . $row["m_email"] . "'>Mail to " . $row['m_username'] ."</a></td>"; 
                 echo "</tr>";
             
+                // $emailList[] = $row["e_email"];
             }
             
+            // $emailAddresses = implode(",", $emailList);
+            // echo "<tr style='background:#DADBF1;'>";
+            // echo "<td colspan='3'><b>Send Email to All Employees</b></td>";
+            // echo "<td><a href='mailto:$emailAddresses'><b>Mail to Everyone</b></a></td>";
+            // echo "</tr>";
         }
         ?>
         </tbody>

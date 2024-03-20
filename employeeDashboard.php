@@ -23,7 +23,7 @@ if(!isset($_SESSION['employee_username'])){
         </div>
         <div id="header">
             <a href="emp_attendance.php">Attendance</a>
-            <a href="invoice.php">Invoice</a>
+            <a href="employee_payroll.php">Invoice</a>
             <a href="employeeEmail.php">Send Email</a>
             <a href="employeeSettings.php">Settings</a>
             <a href="logout.php">Logout</a>

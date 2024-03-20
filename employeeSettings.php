@@ -25,10 +25,8 @@ if(!isset($_SESSION['employee_username'])){
     <table>
         <thead>
         <tr>
-            <th>Username</th>
-            <th>Email</th>
-            <th>Job Title</th>
-            <th>Change your password</th>
+            <th>Title</th>
+            <th>Detail</th>
         </tr>
         </thead>
         <tbody>
@@ -49,14 +47,24 @@ if(isset($_SESSION['email']) || isset($_SESSION['username'])) {
         // Output data of each row
         while($row = $result->fetch_assoc()) {
             echo "<tr>";
+            echo "<td>Username</td>";
             echo "<td>" . $row["e_username"] . "</td>";
+            echo "</tr>";
+            echo "<tr>";
+            echo "<td>Email</td>";
             echo "<td>" . $row["e_email"]  . "</td>";
+            echo "</tr>";
+            echo "<tr>";
+            echo "<td>Job Title</td>";
             echo "<td>" . $row["e_jobtitle"]  . "</td>";
+            echo "</tr>";
+            echo "<tr>";
+            echo "<td>Change your password</td>";
             echo "<td><a href='empChangePassword.php'><button class='btn'>Change Password</button></a></td>";
             echo "</tr>";
         }
     } else {
-        echo "<tr><td colspan='6'>No employee found.</td></tr>";
+        echo "<tr><td colspan='2'>No employee found.</td></tr>";
     }
 } 
 else {

@@ -6,7 +6,8 @@ if (!isset($_SESSION['employee_username'])) {
     header("Location: login.php");
     exit();
 }
-$e_username = $_SESSION['employee_username'];
+$e_username = $_SESSION['username'];
+$e_email = $_SESSION['email'];
 
 require_once 'database.php';
 
@@ -17,7 +18,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Get the current time in Asia/Kathmandu timezone
     $currentTime = date("Y-m-d H:i:s");
 
-    $sql_check_today = "SELECT * FROM attendance_records WHERE e_username = '$e_username' AND DATE(check_in_time) AND DATE(check_out_time) = CURDATE()";
+    $sql_check_today = "SELECT * FROM attendance_records WHERE e_username = '$e_username' OR e_email = '$e_email' AND DATE(check_in_time) AND DATE(check_out_time) = CURDATE()";
     $result_check_today = $conn->query($sql_check_today);
 
     if ($result_check_today->num_rows > 0) {
@@ -27,7 +28,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     else{
         if($status === "check_in" || $status === "check_out") {
-            $sql_employee = "SELECT * FROM employee WHERE e_username = '$e_username'";
+            $sql_employee = "SELECT * FROM employee WHERE e_username = '$e_username' OR e_email = 'e_email'";
             $result_employee = $conn->query($sql_employee);
         
             if ($result_employee->num_rows > 0) {
@@ -37,7 +38,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 if ($status === "check_in") {
                     $sql = "INSERT INTO attendance_records (e_username, e_email, check_in_time) VALUES ('$e_username', '$e_email', '$currentTime')";
                 } elseif ($status === "check_out") {
-                    $sql = "UPDATE attendance_records SET check_out_time = '$currentTime' WHERE e_username = '$e_username' AND check_out_time IS NULL";
+                    $sql = "UPDATE attendance_records SET check_out_time = '$currentTime' WHERE e_username = '$e_username' OR e_email = '$e_email' AND check_out_time IS NULL";
                 }
         
                 if ($conn->query($sql) === TRUE) {

@@ -32,7 +32,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $education = $_POST['education'];
             $experience = $_POST['experience'];
             mysqli_query($conn, "INSERT INTO jobs (job_title, job_description, image_path, location, salary, skills, jobtype, education, experience) VALUES ('$job_title', '$job_description', '$target_file', '$location', '$salary', '$skills', '$jobtype', '$education', '$experience')");
-            header("Location: jobpost.php");
+            echo "<script>alert('Job is successfully posted.'); setTimeout(function(){ window.location.href = 'jobpost.php'; }, 1000);</script>";
+            // header('Location: jobpost.php');
             exit();
         } else {
             echo "Sorry, there was an error uploading your file.";
