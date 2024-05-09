@@ -43,7 +43,7 @@ $conn->close();
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Admin Panel - Payroll Management</title>
+    <title>Pay Salary</title>
     <link rel="stylesheet" href="Login.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -53,7 +53,7 @@ $conn->close();
         <a href="userDashboard.php"><i class="fa-solid fa-backward"></i>Go Back</a>
     </div>
     <div class="box form-box" id="addSalaryForm">
-        <h2>Add Salary for Employee</h2>
+        <h2>Pay Salary of Employee</h2>
         <form action="" method="post">
             <div class="field input">
                 <label for="employeeemail">Employee Email</label>
@@ -61,14 +61,14 @@ $conn->close();
             </div>
             <div class="field input">
                 <label for="monthandyear">Year and Month</label>
-                <input type="text" name="month_year" id="month_year" required>   
+                <input type="month" name="month_year" id="month_year" min="2024-01" value="2024-03" required>   
             </div>
             <div class="field input">
                 <label for="amount">Amount</label>
                 <input type="number" name="amount" id="amount"  required>   
             </div>
             <div class="field">
-                <input class='btn' type="submit" name="add_salary" value="Add Salary">
+                <input class='btn' type="submit" name="add_salary" value="Pay Salary">
             </div>
         </form>
     </div>

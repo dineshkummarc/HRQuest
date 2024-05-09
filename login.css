@@ -32,7 +32,7 @@ body {
     display: flex;
     flex-direction: column;
     border-radius: 5px;
-    padding: 35px;
+    padding: 40px;
     width: 450px;
 }
 
@@ -52,19 +52,6 @@ body {
     font-size: 14px;
 }
 
-
-.google-btn {
-    padding: 10px;
-    margin: 10px;
-    border-radius: 20px;
-    border: 2px solid #fff;
-    cursor: pointer;
-}
-
-.fa-google {
-    color: #4C5FD5;
-    font-size: 20px;
-}
 
 .form-box form .field {
     display: flex;

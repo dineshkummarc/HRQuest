@@ -18,39 +18,51 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Get the current time in Asia/Kathmandu timezone
     $currentTime = date("Y-m-d H:i:s");
 
-    $sql_check_today = "SELECT * FROM attendance_records WHERE e_username = '$e_username' OR e_email = '$e_email' AND DATE(check_in_time) AND DATE(check_out_time) = CURDATE()";
+    // Check if both check-in and check-out are recorded for today
+    $sql_check_today = "SELECT * FROM attendance_records WHERE (e_username = '$e_username' OR e_email = '$e_email') AND DATE(check_in_time) = CURDATE() AND DATE(check_out_time) = CURDATE()";
     $result_check_today = $conn->query($sql_check_today);
 
     if ($result_check_today->num_rows > 0) {
-        // Employee has already performed the action today
-        echo "<script>alert('You have already performed the action today.')</script>";
-    }
+        // Both check-in and check-out have already been performed today
+        echo "<script>alert('You have already checked in and checked out today.')</script>";
+    } else {
+        // Check if only check-in is recorded for today
+        $sql_check_in_today = "SELECT * FROM attendance_records WHERE (e_username = '$e_username' OR e_email = '$e_email') AND DATE(check_in_time) = CURDATE()";
+        $result_check_in_today = $conn->query($sql_check_in_today);
 
-    else{
-        if($status === "check_in" || $status === "check_out") {
-            $sql_employee = "SELECT * FROM employee WHERE e_username = '$e_username' OR e_email = 'e_email'";
-            $result_employee = $conn->query($sql_employee);
-        
-            if ($result_employee->num_rows > 0) {
-                $row_employee = $result_employee->fetch_assoc();
-                $e_email = $row_employee['e_email'];
-        
-                if ($status === "check_in") {
-                    $sql = "INSERT INTO attendance_records (e_username, e_email, check_in_time) VALUES ('$e_username', '$e_email', '$currentTime')";
-                } elseif ($status === "check_out") {
-                    $sql = "UPDATE attendance_records SET check_out_time = '$currentTime' WHERE e_username = '$e_username' OR e_email = '$e_email' AND check_out_time IS NULL";
-                }
-        
-                if ($conn->query($sql) === TRUE) {
-                    echo"<script>alert('Recorded successfully.')</script>" ;
+        if ($status === "check_in" && $result_check_in_today->num_rows > 0) {
+            // Check-in is already recorded for today
+            echo "<script>alert('You have already checked in today.')</script>";
+        } elseif ($status === "check_out" && $result_check_in_today->num_rows == 0) {
+            // Check-in is not recorded for today
+            echo "<script>alert('You have not checked in yet.')</script>";
+        } else {
+            // Proceed with recording check-in or check-out
+            if($status === "check_in" || $status === "check_out") {
+                $sql_employee = "SELECT * FROM employee WHERE e_username = '$e_username' OR e_email = 'e_email'";
+                $result_employee = $conn->query($sql_employee);
+            
+                if ($result_employee->num_rows > 0) {
+                    $row_employee = $result_employee->fetch_assoc();
+                    $e_email = $row_employee['e_email'];
+            
+                    if ($status === "check_in") {
+                        $sql = "INSERT INTO attendance_records (e_username, e_email, check_in_time) VALUES ('$e_username', '$e_email', '$currentTime')";
+                    } elseif ($status === "check_out") {
+                        $sql = "UPDATE attendance_records SET check_out_time = '$currentTime' WHERE (e_username = '$e_username' OR e_email = '$e_email') AND check_out_time IS NULL";
+                    }
+            
+                    if ($conn->query($sql) === TRUE) {
+                        echo"<script>alert('Recorded successfully.')</script>" ;
+                    } else {
+                        echo "Error: " . $sql . "<br>" . $conn->error;
+                    }
                 } else {
-                    echo "Error: " . $sql . "<br>" . $conn->error;
+                    echo "Error: Employee not found.";
                 }
             } else {
-                echo "Error: Employee not found.";
+                echo "Error: Invalid status.";
             }
-        } else {
-            echo "Error: Invalid status.";
         }
     } 
 

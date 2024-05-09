@@ -1,5 +1,7 @@
 // Header Section
 var navbar = document.getElementById("nav-bar");
+var navLinks = document.querySelectorAll("a");
+
 function openmenu(){
     navbar.style.left="0";
 }
@@ -7,6 +9,12 @@ function openmenu(){
 function closemenu(){
     navbar.style.left = "100%";
 }
+
+navLinks.forEach(function(link) {
+    link.addEventListener("click", function() {
+        closemenu();
+    });
+});
 
 // Testimonial section
 
