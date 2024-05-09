@@ -16,8 +16,8 @@ HRQuest is a robust software solution developed using PHP and MySQL. Its primary
 ## Installation
 
 1. Download and Install XAMPP from official site if not already.
-   Download Here:
-   [![XAMPP](https://raw.githubusercontent.com/rdecarlo73/icons/master/xampp.ico)](https://www.apachefriends.org/download.html)
+   Download Here:<br>
+   <br>[![XAMPP](https://raw.githubusercontent.com/rdecarlo73/icons/master/xampp.ico)](https://www.apachefriends.org/download.html)
 
 2. After installation, move the xampp folder to C drive.
 
