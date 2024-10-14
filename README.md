@@ -152,19 +152,14 @@ localhost/HRQuest/index.html
 # Authors
 
 ## Uttam Shrestha
-
 [![LinkedIn](https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=linkedin&logoColor=white)](www.linkedin.com/in/uttamshr)
-
 [![GitHub](https://img.shields.io/badge/GitHub-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/uttamshr10)
 
 ## Pratik Sijapati
-
 [![GitHub](https://img.shields.io/badge/GitHub-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/pratiksijapati)
 
 # Contribution
-
 Contributions are welcome! If you find any bugs or have any suggestions for improvements, please create an issue or a pull request.
 
 # Contact
-
 If you have any questions or feedback, feel free to contact us at utam.shrestha65@gmail.com or pratiksijapati576@gmail.com.
