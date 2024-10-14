@@ -12,31 +12,22 @@ HRQuest is a robust software solution developed using PHP and MySQL. Its primary
 - PHP
 
 ## Installation
-
 1. Download and Install XAMPP from official site or by clicking the XAMPP icon below if not already.
    <br>[![XAMPP](https://raw.githubusercontent.com/rdecarlo73/icons/master/xampp.ico)](https://www.apachefriends.org/download.html)
-
 2. After installation, move the xampp folder to C drive.
-
 3. Clone the repository to your local machine.
 ```
 git@github.com:uttamshr10/HRQuest.git
 ```
-
 4. After cloning the repo, copy the repo folder and move it to htdocs folder of C://xampp.
-
 5. Start XAMPP then Apache and MySQL.
-
 6. **Database and Table Setup:**
-
    - Run `database.php`, `createAppliedJobsTable.php`, `createAttendanceTable.php`, `createEmployeeTable.php`, `createJobTable.php`, `createMessageTable.php`,
      `createPayrollTable.php`, `createTableAccepted.php`, `createTableRejected.php` and `createUserTable.php`.
-
 7. Now, you can access HRQuest project in your local web browser by going to below url:
 ```
 localhost/HRQuest/index.html
 ```
-
 <p align="center"><b>Home Page</b></p>
 ![Alt text](/essentials/homepage.png)
 ![Alt text](/essentials/about-us.png)
