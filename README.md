@@ -40,14 +40,12 @@ localhost/HRQuest/index.html
 ```
 
 <p align="center"><b>Home Page</b></p>
-
 ![Alt text](/essentials/homepage.png)
 ![Alt text](/essentials/about-us.png)
 ![Alt text](/essentials/our-features.png)
 ![Alt text](/essentials/message.png)
 ![Alt text](/essentials/testimonials.png)
 ![Alt text](/essentials/contact-us.png)
-
 <p align="center"><b>Career Page</b></p>
 ![Alt text](/essentials/careers.png)
 <p align="center"><b>Login Page for User, Employee and Manager</b></p>
