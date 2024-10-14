@@ -1,9 +1,7 @@
 # Human Resource Quest (HRQuest)
-
 HRQuest is a robust software solution developed using PHP and MySQL. Its primary objective is to streamline human resource processes within an organization including employee management, payroll, attendance tracking, candidate hiring and many more.
 
 ## Prerequisites
-
 - XAMPP (Apache, MySQL, PHP, phpMyAdmin)
 - Web browser (Chrome, Firefox etc.)
 
