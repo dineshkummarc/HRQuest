@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Aug 25, 2025 at 05:07 AM
+-- Generation Time: Aug 25, 2025 at 06:23 AM
 -- Server version: 9.1.0
 -- PHP Version: 8.2.26
 
@@ -89,6 +89,18 @@ CREATE TABLE IF NOT EXISTS `employee` (
   `e_jobtitle` varchar(200) DEFAULT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
+--
+-- Dumping data for table `employee`
+--
+
+INSERT INTO `employee` (`e_username`, `e_email`, `e_password`, `e_jobtitle`) VALUES
+(NULL, NULL, NULL, NULL),
+('dineshkummarc', 'mapmydestination@gmail.com', 'choudhary@123', 'Sr. Software Engineer'),
+(NULL, NULL, NULL, NULL),
+('dineshkummarc', 'mapmydestination@gmail.com', 'choudhary@123', 'Sr. Software Engineer'),
+('dk', 'dk@hrquest.com', 'dk', 'sr. sse'),
+('dk', 'dk@hrquest.com', 'dk', 'sr. sse');
+
 -- --------------------------------------------------------
 
 --
@@ -109,6 +121,28 @@ CREATE TABLE IF NOT EXISTS `jobs` (
   `experience` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `manager`
+--
+
+DROP TABLE IF EXISTS `manager`;
+CREATE TABLE IF NOT EXISTS `manager` (
+  `m_username` varchar(200) DEFAULT NULL,
+  `m_email` varchar(200) DEFAULT NULL,
+  `m_password` varchar(200) DEFAULT NULL,
+  `m_jobtitle` varchar(200) DEFAULT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Dumping data for table `manager`
+--
+
+INSERT INTO `manager` (`m_username`, `m_email`, `m_password`, `m_jobtitle`) VALUES
+(NULL, NULL, NULL, NULL),
+('dkm', 'dkm@hrquest.com', 'dkm', 'sr. sse');
 
 -- --------------------------------------------------------
 
