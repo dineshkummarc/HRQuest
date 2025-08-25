@@ -32,63 +32,63 @@ git@github.com:uttamshr10/HRQuest.git
 localhost/HRQuest/index.html
 ```
 <p align="center"><b>Home Page</b></p>
-![Alt text](/essentials/homepage.png)
-![Alt text](/essentials/about-us.png)
-![Alt text](/essentials/our-features.png)
-![Alt text](/essentials/message.png)
-![Alt text](/essentials/testimonials.png)
-![Alt text](/essentials/contact-us.png)
+![Alt text](/essentials/homepage.png
+![Alt text](/essentials/about-us.png
+![Alt text](/essentials/our-features.png
+![Alt text](/essentials/message.png
+![Alt text](/essentials/testimonials.png
+![Alt text](/essentials/contact-us.png
 <p align="center"><b>Career Page</b></p>
-![Alt text](/essentials/careers.png)
+![Alt text](/essentials/careers.png
 <p align="center"><b>Login Page for User, Employee and Manager</b></p>
-![Alt text](/essentials/login.png)
+![Alt text](/essentials/login.png
 <p align="center"><b>Register User</b></p>
-![Alt text](/essentials/register-user.png)
+![Alt text](/essentials/register-user.png
 <p align="center"><b>Register Employee</b></p>
-![Alt text](/essentials/register-employee.png)
+![Alt text](/essentials/register-employee.png
 <p align="center"><b>User Dashboard</b></p>
-![Alt text](/essentials/user-dashboard.png)
+![Alt text](/essentials/user-dashboard.png
 <p align="center"><b>Apply Now</b></p>
-![Alt text](/essentials/apply-now.png)
+![Alt text](/essentials/apply-now.png
 <p align="center"><b>Accepted Job</b></p>
-![Alt text](/essentials/accepted.png)
+![Alt text](/essentials/accepted.png
 <p align="center"><b>Rejected Job</b></p>
-![Alt text](/essentials/rejected.png)
+![Alt text](/essentials/rejected.png
 <p align="center"><b>Applied</b></p>
-![Alt text](/essentials/apply.png)
+![Alt text](/essentials/apply.png
 <p align="center"><b>Job Status</b></p>
-![Alt text](/essentials/job-status.png)
+![Alt text](/essentials/job-status.png
 <p align="center"><b>User Settings</b></p>
-![Alt text](/essentials/user-settings.png)
+![Alt text](/essentials/user-settings.png
 <p align="center"><b>Change Password</b></p>
-![Alt text](/essentials/change-password.png)
+![Alt text](/essentials/change-password.png
 <p align="center"><b>Employee Dashboard</b></p>
-![Alt text](/essentials/employee-dashboard.png)
+![Alt text](/essentials/employee-dashboard.png
 <p align="center"><b>Record Attendance</b></p>
-![Alt text](/essentials/employee-attendance.png)
+![Alt text](/essentials/employee-attendance.png
 <p align="center"><b>Employee Invoice</b></p>
-![Alt text](/essentials/invoice.png)
+![Alt text](/essentials/invoice.png
 <p align="center"><b>Mail to Manager</b></p>
-![Alt text](/essentials/mail-manager.png)
+![Alt text](/essentials/mail-manager.png
 <p align="center"><b>Employee Settings</b></p>
-![Alt text](/essentials/employee-settings.png)
+![Alt text](/essentials/employee-settings.png
 <p align="center"><b>Manager Dashboard</b></p>
-![Alt text](/essentials/manager-dashboard.png)
+![Alt text](/essentials/manager-dashboard.png
 <p align="center"><b>Post Job</b></p>
-![Alt text](/essentials/job-post.png)
-![Alt text](/essentials/job-post2.png)
+![Alt text](/essentials/job-post.png
+![Alt text](/essentials/job-post2.png
 <p align="center"><b>Employee Details</b></p>
-![Alt text](/essentials/employee-detail.png)
+![Alt text](/essentials/employee-detail.png
 <p align="center"><b>Check Attendance</b></p>
-![Alt text](/essentials/check-attendance.png)
+![Alt text](/essentials/check-attendance.png
 <p align="center"><b>Attendance of particular Employee</b></p>
-![Alt text](/essentials/attendance.png)
+![Alt text](/essentials/attendance.png
 <p align="center"><b>Add Salary</b></p>
-![Alt text](/essentials/pay-salary.png)
+![Alt text](/essentials/pay-salary.png
 <p align="center"><b>Hire Applicant</b></p>
-![Alt text](/essentials/hire.png)
+![Alt text](/essentials/hire.png
 <p align="center"><b>Mail to Applicants</b></p>
-![Alt text](/essentials/send-email.png)
+![Alt text](/essentials/send-email.png
 
 # Authors
 
