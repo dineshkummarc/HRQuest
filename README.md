@@ -21,9 +21,9 @@ git@github.com:uttamshr10/HRQuest.git
 ```
 4. After cloning the repo, copy the repo folder and move it to htdocs folder of C://xampp.
 5. Start XAMPP then Apache and MySQL.
-6. **Database and Table Setup:**
-   - Opwn `database.php`in your browser to check for any errors, if any then resolve as per your configuration.
-7. **Database and Table Setup:**
+6. **Database Setup:**
+   - Open `database.php`in your browser to check for any errors, if any then resolve as per your configuration.
+7. **Database Table Setup:**
    - Run `createAppliedJobsTable.php`, `createAttendanceTable.php`, `createEmployeeTable.php`, `createJobTable.php`, `createMessageTable.php`,
      `createPayrollTable.php`, `createTableAccepted.php`, `createTableRejected.php` and `createUserTable.php`.
    - OR import hrquest.sql into your database.
