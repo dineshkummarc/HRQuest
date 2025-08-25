@@ -23,7 +23,8 @@ git@github.com:uttamshr10/HRQuest.git
 5. Start XAMPP then Apache and MySQL.
 6. **Database and Table Setup:**
    - Run `database.php`, `createAppliedJobsTable.php`, `createAttendanceTable.php`, `createEmployeeTable.php`, `createJobTable.php`, `createMessageTable.php`,
-     `createPayrollTable.php`, `createTableAccepted.php`, `createTableRejected.php` and `createUserTable.php`. or import hrquest.sql into your database.
+     `createPayrollTable.php`, `createTableAccepted.php`, `createTableRejected.php` and `createUserTable.php`.
+   - OR import hrquest.sql into your database.
 7. Now, you can access HRQuest project in your local web browser by going to below url:
 ```
 localhost/HRQuest/index.html
