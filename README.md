@@ -32,63 +32,63 @@ git@github.com:uttamshr10/HRQuest.git
 localhost/HRQuest/index.html
 ```
 <p align="center"><b>Home Page</b></p>
-![Alt text](/essentials/homepage.png
-![Alt text](/essentials/about-us.png
-![Alt text](/essentials/our-features.png
-![Alt text](/essentials/message.png
-![Alt text](/essentials/testimonials.png
-![Alt text](/essentials/contact-us.png
+https://github.com/dineshkummarc/HRQuest/blob/master/essentials/homepage.png
+https://github.com/dineshkummarc/HRQuest/blob/master/essentials/about-us.png
+https://github.com/dineshkummarc/HRQuest/blob/master/essentials/our-features.png
+https://github.com/dineshkummarc/HRQuest/blob/master/essentials/message.png
+https://github.com/dineshkummarc/HRQuest/blob/master/essentials/testimonials.png
+https://github.com/dineshkummarc/HRQuest/blob/master/essentials/contact-us.png
 <p align="center"><b>Career Page</b></p>
-![Alt text](/essentials/careers.png
+https://github.com/dineshkummarc/HRQuest/blob/master/essentials/careers.png
 <p align="center"><b>Login Page for User, Employee and Manager</b></p>
-![Alt text](/essentials/login.png
+https://github.com/dineshkummarc/HRQuest/blob/master/essentials/login.png
 <p align="center"><b>Register User</b></p>
-![Alt text](/essentials/register-user.png
+https://github.com/dineshkummarc/HRQuest/blob/master/essentials/register-user.png
 <p align="center"><b>Register Employee</b></p>
-![Alt text](/essentials/register-employee.png
+https://github.com/dineshkummarc/HRQuest/blob/master/essentials/register-employee.png
 <p align="center"><b>User Dashboard</b></p>
-![Alt text](/essentials/user-dashboard.png
+https://github.com/dineshkummarc/HRQuest/blob/master/essentials/user-dashboard.png
 <p align="center"><b>Apply Now</b></p>
-![Alt text](/essentials/apply-now.png
+https://github.com/dineshkummarc/HRQuest/blob/master/essentials/apply-now.png
 <p align="center"><b>Accepted Job</b></p>
-![Alt text](/essentials/accepted.png
+https://github.com/dineshkummarc/HRQuest/blob/master/essentials/accepted.png
 <p align="center"><b>Rejected Job</b></p>
-![Alt text](/essentials/rejected.png
+https://github.com/dineshkummarc/HRQuest/blob/master/essentials/rejected.png
 <p align="center"><b>Applied</b></p>
-![Alt text](/essentials/apply.png
+https://github.com/dineshkummarc/HRQuest/blob/master/essentials/apply.png
 <p align="center"><b>Job Status</b></p>
-![Alt text](/essentials/job-status.png
+https://github.com/dineshkummarc/HRQuest/blob/master/essentials/job-status.png
 <p align="center"><b>User Settings</b></p>
-![Alt text](/essentials/user-settings.png
+https://github.com/dineshkummarc/HRQuest/blob/master/essentials/user-settings.png
 <p align="center"><b>Change Password</b></p>
-![Alt text](/essentials/change-password.png
+https://github.com/dineshkummarc/HRQuest/blob/master/essentials/change-password.png
 <p align="center"><b>Employee Dashboard</b></p>
-![Alt text](/essentials/employee-dashboard.png
+https://github.com/dineshkummarc/HRQuest/blob/master/essentials/employee-dashboard.png
 <p align="center"><b>Record Attendance</b></p>
-![Alt text](/essentials/employee-attendance.png
+https://github.com/dineshkummarc/HRQuest/blob/master/essentials/employee-attendance.png
 <p align="center"><b>Employee Invoice</b></p>
-![Alt text](/essentials/invoice.png
+https://github.com/dineshkummarc/HRQuest/blob/master/essentials/invoice.png
 <p align="center"><b>Mail to Manager</b></p>
-![Alt text](/essentials/mail-manager.png
+https://github.com/dineshkummarc/HRQuest/blob/master/essentials/mail-manager.png
 <p align="center"><b>Employee Settings</b></p>
-![Alt text](/essentials/employee-settings.png
+https://github.com/dineshkummarc/HRQuest/blob/master/essentials/employee-settings.png
 <p align="center"><b>Manager Dashboard</b></p>
-![Alt text](/essentials/manager-dashboard.png
+https://github.com/dineshkummarc/HRQuest/blob/master/essentials/manager-dashboard.png
 <p align="center"><b>Post Job</b></p>
-![Alt text](/essentials/job-post.png
-![Alt text](/essentials/job-post2.png
+https://github.com/dineshkummarc/HRQuest/blob/master/essentials/job-post.png
+https://github.com/dineshkummarc/HRQuest/blob/master/essentials/job-post2.png
 <p align="center"><b>Employee Details</b></p>
-![Alt text](/essentials/employee-detail.png
+https://github.com/dineshkummarc/HRQuest/blob/master/essentials/employee-detail.png
 <p align="center"><b>Check Attendance</b></p>
-![Alt text](/essentials/check-attendance.png
+https://github.com/dineshkummarc/HRQuest/blob/master/essentials/check-attendance.png
 <p align="center"><b>Attendance of particular Employee</b></p>
-![Alt text](/essentials/attendance.png
+https://github.com/dineshkummarc/HRQuest/blob/master/essentials/attendance.png
 <p align="center"><b>Add Salary</b></p>
-![Alt text](/essentials/pay-salary.png
+https://github.com/dineshkummarc/HRQuest/blob/master/essentials/pay-salary.png
 <p align="center"><b>Hire Applicant</b></p>
-![Alt text](/essentials/hire.png
+https://github.com/dineshkummarc/HRQuest/blob/master/essentials/hire.png
 <p align="center"><b>Mail to Applicants</b></p>
-![Alt text](/essentials/send-email.png
+https://github.com/dineshkummarc/HRQuest/blob/master/essentials/send-email.png
 
 # Authors
 
