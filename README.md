@@ -87,10 +87,7 @@ https://github.com/dineshkummarc/HRQuest/blob/master/essentials/attendance.png
 https://github.com/dineshkummarc/HRQuest/blob/master/essentials/pay-salary.png
 <p align="center"><b>Hire Applicant</b></p>
 https://github.com/dineshkummarc/HRQuest/blob/master/essentials/hire.png
-<p align="center"><b>Mail to Applicants</b></p>
-https://github.com/dineshkummarc/HRQuest/blob/master/essentials/send-email.png
-
-(https://img.shields.io/badge/GitHub-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
+[!(<p align="center"><b>Mail to Applicants</b></p>)](https://github.com/dineshkummarc/HRQuest/blob/master/essentials/send-email.png)
 
 # Authors
 
